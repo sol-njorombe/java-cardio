@@ -27,7 +27,10 @@ public class AppleTray {
     int[][] afterRipenTray = new int[rows][cols];
     for (int i = 0; i < apples.length; i++) {
       for (int j = 0; j < apples[i].length; j++) {
-        updateNeighbours(i, j);
+        Apple apple = apples[i][j];
+        if (apple.getRipeness() == Ripeness.ROTTEN) {
+          updateNeighbours(i, j);
+        }
       }
     }
 
