@@ -2,6 +2,7 @@ package com.algorithms;
 
 import com.builder.BuilderDemo1;
 import com.fte.FTEModel;
+import com.minofsortedlists.MinFrmListsController;
 import com.rottenapples.RottenApplesController;
 
 public class Starter {
@@ -10,6 +11,7 @@ public class Starter {
     // builderDemo1.runDemo();
     // FTEModel fteModel = new FTEModel();
     // fteModel.addEmployees();
-    RottenApplesController.testFunction();
+    // RottenApplesController.testFunction();
+    MinFrmListsController.testMinKFrmList();
   }
 }
