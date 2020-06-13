@@ -1,9 +1,6 @@
 package com.algorithms;
 
-import com.builder.BuilderDemo1;
-import com.fte.FTEModel;
-import com.minofsortedlists.MinFrmListsController;
-import com.rottenapples.RottenApplesController;
+import com.NoOfFrogs.FrogsController;
 
 public class Starter {
   public static void main(String args[]) {
@@ -12,6 +9,7 @@ public class Starter {
     // FTEModel fteModel = new FTEModel();
     // fteModel.addEmployees();
     // RottenApplesController.testFunction();
-    MinFrmListsController.testMinKFrmList();
+    // MinFrmListsController.testMinKFrmList();
+    FrogsController.countMinFrogs();
   }
 }
