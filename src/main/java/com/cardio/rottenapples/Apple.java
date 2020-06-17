@@ -1,4 +1,4 @@
-package com.rottenapples;
+package com.cardio.rottenapples;
 
 import java.util.HashMap;
 import java.util.Map;

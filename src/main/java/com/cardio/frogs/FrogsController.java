@@ -1,4 +1,4 @@
-package com.NoOfFrogs;
+package com.cardio.frogs;
 
 public class FrogsController {
   public static void countMinFrogs() {

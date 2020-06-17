@@ -1,4 +1,4 @@
-package com.rottenapples;
+package com.cardio.rottenapples;
 
 public enum Ripeness {
   EMPTY,

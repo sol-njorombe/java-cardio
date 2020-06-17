@@ -1,4 +1,4 @@
-package com.minofsortedlists;
+package com.cardio.minofsortedlists;
 
 import java.util.Arrays;
 

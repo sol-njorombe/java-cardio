@@ -1,6 +1,4 @@
-package com.minofsortedlists;
-
-import java.util.ArrayList;
+package com.cardio.minofsortedlists;
 
 public class MinFrmLists {
   int[] indexPointers;
