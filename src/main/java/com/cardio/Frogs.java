@@ -1,4 +1,4 @@
-package com.cardio.frogs;
+package com.cardio;
 
 import java.util.ArrayList;
 import java.util.HashMap;
