@@ -1,4 +1,4 @@
-package com.cardio.minofsortedlists;
+package com.cardio;
 
 public class MinFrmLists {
   int[] indexPointers;
@@ -6,7 +6,7 @@ public class MinFrmLists {
   int cols;
   int rows;
 
-  MinFrmLists(int[][] inputArr) {
+  public MinFrmLists(int[][] inputArr) {
     this.inputArr = inputArr;
     this.rows = inputArr.length;
     this.cols = inputArr[0].length;

@@ -1,4 +1,4 @@
-package com.cardio.rottenapples;
+package com.cardio;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,15 +20,15 @@ public class AppleTray {
   }
 
   public int[][] rippen() {
-    Map<Ripeness, Integer> outputMapping = new HashMap<Ripeness, Integer>();
-    outputMapping.put(Ripeness.EMPTY, 0);
-    outputMapping.put(Ripeness.GOOD, 1);
-    outputMapping.put(Ripeness.ROTTEN, 2);
+    Map<AppleRipeness, Integer> outputMapping = new HashMap<AppleRipeness, Integer>();
+    outputMapping.put(AppleRipeness.EMPTY, 0);
+    outputMapping.put(AppleRipeness.GOOD, 1);
+    outputMapping.put(AppleRipeness.ROTTEN, 2);
     int[][] afterRipenTray = new int[rows][cols];
     for (int i = 0; i < apples.length; i++) {
       for (int j = 0; j < apples[i].length; j++) {
         Apple apple = apples[i][j];
-        if (apple.getRipeness() == Ripeness.ROTTEN) {
+        if (apple.getRipeness() == AppleRipeness.ROTTEN) {
           updateNeighbours(i, j);
         }
       }
@@ -46,12 +46,12 @@ public class AppleTray {
     if (row < 0 || row >= rows || col < 0 || col >= cols)
     { return; }
     Apple apple = apples[row][col];
-    if (apple.getRipeness() == Ripeness.EMPTY || apple.isVisited()) {
+    if (apple.getRipeness() == AppleRipeness.EMPTY || apple.isVisited()) {
       apple.setVisited();
       return;
     }
 
-    apple.updateRipeness(Ripeness.ROTTEN);
+    apple.updateRipeness(AppleRipeness.ROTTEN);
     updateNeighbours(row - 1, col);
     updateNeighbours(row, col + 1);
     updateNeighbours(row + 1, col);
